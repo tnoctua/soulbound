@@ -41,15 +41,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}" // Fabric API
-	modImplementation "me.tnoctua:nmodutils:${nmodutils_version}+mc${minecraft_version}" // NModUtils
-
-	// Runtime-only mods for testing purposes
-	modRuntimeOnly "maven.modrinth:modmenu:${modmenu_version}"
-	modRuntimeOnly "maven.modrinth:sodium:mc${minecraft_version}-${sodium_version}-fabric"
-	modRuntimeOnly "maven.modrinth:sodium-extra:mc${minecraft_version}-${sodium_extra_version}+fabric"
-	modRuntimeOnly "maven.modrinth:reeses-sodium-options:mc1.21.4-${reese_sodium_version}+fabric"
-	modRuntimeOnly "maven.modrinth:no-chat-reports:Fabric-${project.minecraft_version}-v${no_chat_reports_version}"
-	
+	modImplementation "me.tnoctua:nmodutils:${nmodutils_version}" // NModUtils
 }
 
 processResources {

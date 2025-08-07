@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "soulcomponent",
+	"version": "${version}",
+	"name": "Soulbound",
+	"description": "Adds a component that can be attached to items, allowing players to retain them upon death",
+	"authors": [
+		"N (tnoctua)"
+	],
+	"contact": {
+		"sources": "https://github.com/tnoctua/soulbound",
+		"issues": "https://github.com/tnoctua/soulbound/issues"
+	},
+	"license": "LGPL-2.1",
+	"icon": "assets/soulcomponent/soulbound.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "me.tnoctua.soulbound.Soulbound"
+		],
+		"fabric-datagen": [
+			"me.tnoctua.datagen.SoulboundDataGenerator"
+		]
+	},
+	"mixins": [
+		"soulcomponent.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": ">=1.21.5 <=1.21.8",
+		"java": ">=21",
+		"fabric-api": "*",
+		"nmodutils": "^1.0.0-beta.2"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.github_releases" : "https://github.com/tnoctua/soulbound/releases",
+				"modmenu.modrinth" : "https://modrinth.com/mod/soul-component",
+				"modmenu.curseforge" : "https://curseforge.com/minecraft/mc-mods/soul-component"
+			},
+			"update_checker": true
+		}
+	}
+}

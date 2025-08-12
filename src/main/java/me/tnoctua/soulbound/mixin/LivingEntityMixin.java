@@ -30,7 +30,7 @@ public abstract class LivingEntityMixin extends Entity {
             ItemEntity itemEntity = createItemEntity(stack, false, true);
             if (itemEntity != null) {
                 itemEntity.setOwner(getUuid());
-                this.getWorld().spawnEntity(itemEntity);
+                this.getEntityWorld().spawnEntity(itemEntity);
             }
 
             cir.setReturnValue(itemEntity);
